@@ -27,7 +27,6 @@ public class StackImpl {
 		
 		System.out.println("removed item is" + arr[top]);
 		return arr[top--];
-		
 	}
 	
 	public static void main(String[] args) {
