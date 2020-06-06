@@ -17,9 +17,17 @@ public class RunnableThread {
 
 		Thread thread2= new Thread(
 				() -> {
+					try {
+						//thread2 will join thread1. It will wait till thread1 completes
+						thread1.join();
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 					for(int i=0; i < 2; i++) {
 						System.out.println("Hello");
 					}
+					
 				});
 		thread1.start();
 		thread2.start();
