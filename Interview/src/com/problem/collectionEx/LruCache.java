@@ -26,8 +26,7 @@ public class LruCache {
 	
 	public void refer(int key) {
 		if(get(key)==false) {
-			put(key);
-			
+			put(key);			
 		}
 	}
 
