@@ -31,7 +31,13 @@ public class StackImpl {
 	
 	public static void main(String[] args) {
 		StackImpl st= new StackImpl(3);
+		st.push(1);
+		st.push(2);
 		st.push(3);
+		st.pop();
+		st.pop();
+		System.out.println("arr" );
+		
 	}
 
 }

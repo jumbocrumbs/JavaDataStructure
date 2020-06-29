@@ -9,6 +9,9 @@ public class LruCache {
 	int capacity;
 	Set<Integer> cache;
 	
+	
+	
+	
 	public LruCache(int size) {
 		this.capacity = size;
 		this.cache = new LinkedHashSet<Integer>(size);
